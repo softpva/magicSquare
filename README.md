@@ -1,50 +1,54 @@
 # **Magic Square**
-[![en](https://img.shields.io/badge/lang-en-red.svg)](https://github.com/softpva/factorizeBarrels)
+[![en](https://img.shields.io/badge/lang-en-red.svg)](https://github.com/softpva/magicSquare)
 [![pt-br](https://img.shields.io/badge/lang-pt--br-green.svg)](./README.pt-br.md)
 [![es](https://img.shields.io/badge/lang-es-yellow.svg)](./README.es.md)
   
 
 # About
 > This 2D game is part of a experimental set of educational games built in godot engine using gdscript language. (like python)  
-> Factorize a number hitting off barrels.   
+> A square divided into smaller squares each containing a number, such that the figures in each vertical, horizontal, and diagonal row add up to the same or other values.  
+> Move the yellow squares so that their sums become equal to the blue squares horizontally, vertically and diagonally.
 >
 > [![NPM](https://img.shields.io/npm/l/react)](./LICENSE) 
 
 # Features
-> - The game consists of a bird with a sledgehammer and a stack of barrels.
-> - The bird has time to solve a random number to be factored by hitting the barrels.
-> - Some barrels contain a prime number stamped in it to be chosen.
-> - The external impact of the hammer just moves the pile down.
-> - The internal impact (click) of the hammer points the respective prime number to become a factor in the factorization.
-> - You can place the bird to the left or right of the barrels just by clicking on the respective side.
-> - You win if you solve the factorization and you lose if you miss a number, get hit by a spear or run out of time.
-> - Hitting increases the timer counter.
-> - The speed at which the barrels fall down and the upper limit of the random number to be factored vary in six levels with increasing difficulties.
-> - Small barrels are added above the time counter, showing what level you are at.
-> - The sound can be turned off by the button in the upper left corner.
+> - This game is under develpment.
+> - The game consists of a square divided into smaller squares each containing a number.
+> - Move (drag) the yellow squares so that their sums become equal to the blue squares horizontally, vertically and diagonally.
+> - Only the internal yellow squares can be moved.
+> - A tap or a click returns to the previous state.
+> - The whished result are in the blue squares at the upper row and at the  right column.
+> - Red squares contain wrong results, green squares contain correct ones.
+> - The game starts with an internal grid of 2x2 yellow squares, the grid increases in size and difficulty until it reaches a grid of 5x5 yellow squares.
+> - A counter in the upper right corner records the points earned. Points vary according to level and correct or incorrect attempts.
+> - At higher and very difficult levels, you can get up hints.
 
 
 
 # Layouts
-> ## A typical start page  
-> - The initial number to be factored is randonomicaly generated.  
-> ![initial page](./readmeImages/initial_page.gif)
+> ## A typical 2x2 internal grid start page.   
+> ![initial 2x2 page](./readmeImages/start_page_2x2.gif)
 
-> ## If you get right the factorization of 34  
-> - For that you hit a barrel with number 2 and number 17  
-> - And you won!!!  
-> ![initial page](./readmeImages/Get_34.gif)
+> ## When you beat the first challenge above.    
+> ![win 2x2 page](./readmeImages/win_2x2.gif)
 
-> ## Another example, now you get right the factorization of 48  
-> - For that you hit a barrel with number 2 for 4 times and number 3 for once.  
-> - And you won again!!!  
-> ![initial page](./readmeImages/get_48.gif)
+> ## A typical 3x3 internal grid start page.  
+> ![initial 3x3 page](./readmeImages/start_3x3.gif)
 
-> ## Oh my god, you lost!!!
-> - Number 19 is a prime number, you should expected it to be shown on a barrel.  
-> - 19 divided by 3 is not an integer number.  
-> - Good look next!   
-> ![initial page](./readmeImages/bum_152.gif)
+> ## Playing the step above. See hint button.  
+> ![playing 3x3 page](./readmeImages/hint_3x3.gif)
+
+> ## After press hint button. See the hint below the squares.   
+> ![hint 3x3 page](./readmeImages/after_hint_3x3.gif)
+
+> ## Congrats, you hit the challenge above.   
+> ![win 3x3 page](./readmeImages/win_3x3.gif)
+
+> ## A typical dificult 4x4 internal grid start page.  
+> ![initial 4x4 page](./readmeImages/start_4x4.gif)
+
+> ## A typical very dificult 5x5 internal grid start page.  
+> ![initial 5x5 page](./readmeImages/start_5x5.gif)
 
 
 # Models
